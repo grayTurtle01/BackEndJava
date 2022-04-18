@@ -38,8 +38,16 @@ class Personaje{
 public class Modelado{
     public static void main(String[] args){
         Personaje harry = new Personaje("Harry", "Gryffindor", "Male", "Ciervo", "Dementor");
+        Personaje hermione = new Personaje("Hermione", "Gryffindor", "Female", "Nutria", "McGonagall");
+        Personaje ron = new Personaje("Ron", "Gryffindor", "Male", "Jack Russell Terrier", "Araña");
+        Personaje luna = new Personaje("Luna", "Ravenclaw", "Female", "Liebre", "");
+        Personaje draco = new Personaje("Draco", "Slytherin", "Male", "", "Voldemort");
        
         System.out.println(harry);
+        System.out.println(hermione);
+        System.out.println(ron);
+        System.out.println(luna);
+        System.out.println(draco);
         
     }
 }
