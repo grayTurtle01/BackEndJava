@@ -13,6 +13,16 @@ class Personaje{
         this.boggart = boggart;
     }
 
+    public Personaje(String name, String house, String gender){
+        this.name = name;
+        this.house = house;
+        this.gender = gender;
+        this.patronus = "";
+        this.boggart = "";
+    }
+
+    
+
     public String toString(){
         return String.format("%s | %s | %s | %s | %s",
                              name, house, gender, patronus, boggart);
@@ -42,7 +52,8 @@ public class Modelado{
         Personaje hermione = new Personaje("Hermione", "Gryffindor", "Female", "Nutria", "McGonagall");
         Personaje ron = new Personaje("Ron", "Gryffindor", "Male", "Jack Russell Terrier", "Araña");
         Personaje luna = new Personaje("Luna", "Ravenclaw", "Female", "Liebre", "");
-        Personaje draco = new Personaje("Draco", "Slytherin", "Male", "", "Voldemort");
+        Personaje draco = new Personaje("Draco", "Slytherin", "Male", "", "");
+        draco.setBoggart("Voldemort");
        
         System.out.println(harry);
         System.out.println(hermione);

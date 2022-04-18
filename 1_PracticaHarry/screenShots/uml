@@ -1,0 +1,16 @@
+------------------------------------------------------------
+|                         Personaje                        | 
+------------------------------------------------------------
+| name    : String                                         |
+| house   : String                                         | 
+| gender  : String                                         |  
+| patronus: String                                         |
+| boggart : String                                         |
+------------------------------------------------------------
+| <> Personaje(name:String, house:String, gender:String)   |
+| +  toString() : String                                   |
+| +  getPatronus() : String                                |  
+| +  setPatronus(patronus : String)                        |
+| +  getBoggart() : String                                 | 
+| +  setBoggart(boggart : String)                          |
+------------------------------------------------------------
