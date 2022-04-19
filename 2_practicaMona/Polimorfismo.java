@@ -36,8 +36,9 @@ class DinoCat extends Octocat{
     }
 }
 
-
 class UmbrellaCat extends Octocat{
+    String[] accessories = {"umbrella"}; 
+
 
     public UmbrellaCat(){
         super();
@@ -48,6 +49,22 @@ class UmbrellaCat extends Octocat{
 
     public void move(){
         System.out.println("I am jumping over puddle");
+    }
+}
+
+class FilmToCat extends Octocat{
+    String[] accessories = {"camera", "mic", "glasses"}; 
+
+
+    public FilmToCat(){
+        super();
+        name = "filmToCat";
+        description = "An octocat with glasses, a camera and mic";
+
+    }
+
+    public void move(){
+        System.out.println("I am filming you");
     }
 }
 
@@ -69,6 +86,11 @@ public class Polimorfismo{
         UmbrellaCat umbrella = new UmbrellaCat();
         umbrella.greet();
         umbrella.move();
+        System.out.println();
+
+        FilmToCat film = new FilmToCat();
+        film.greet();
+        film.move();
         System.out.println();
         
         
