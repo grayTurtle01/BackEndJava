@@ -4,6 +4,12 @@ public class Champion{
     String description;
     String difficulty;
 
+    String firstMove;
+    String secondMove;
+    String thirdMove;
+    String ultimate;
+    String pasive;
+
     public Champion(String name, String role, String description, String difficulty){
         this.name = name;
         this.role = role;
@@ -18,4 +24,13 @@ public class Champion{
                "description: " + description; 
      }
 }
+
+interface Moves{
+    void firstMove_Q();
+    void secondMove_W();
+    //~ void thirdMove_E();
+    //~ void ultimate_R();
+    //~ void pasive();
+}
+
 
