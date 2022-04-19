@@ -3,12 +3,13 @@ public class Interfaces{
 
     public static void main(String[] args){
 
-        //~ Ashe ashe = new Ashe();
-        //~ ashe.pasive();
-        //~ ashe.firstMove_Q();
-        //~ ashe.secondMove_W();
-        //~ ashe.thirdMove_E();
-        //~ ashe.ultimate_R();
+        Ashe ashe = new Ashe();
+        ashe.pasive();
+        ashe.firstMove_Q();
+        ashe.secondMove_W();
+        ashe.thirdMove_E();
+        ashe.ultimate_R();
+        System.out.println();
 
         LeeSin lee = new LeeSin();
         lee.pasive();
@@ -16,6 +17,11 @@ public class Interfaces{
         lee.secondMove_W();
         lee.thirdMove_E();
         lee.ultimate_R();
+        System.out.println();
+
+        Akali akali = new Akali();
+        System.out.println(akali);
+        akali.showMoves();
 
         
     }
