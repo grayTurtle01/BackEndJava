@@ -1,35 +1,35 @@
-interface AsheMoves{
-    void frostShot();
-    void hawkShot();
-    //~ void thirdMove_E();
-    //~ void ultimate_R();
-    //~ void pasive();
-}
 
 public class Ashe extends Champion implements Moves{
     
-    public Ashe(String name, String role, String description, String difficulty){
-        super( name,  role,  description,  difficulty);
-        firstMove = "Frost Shot";
-        secondMove = "Hawk Shot";
-        thirdMove = "Ranger Focus";
-        ultimate = "Crystal Arrow";
+    public Ashe(){
+        super( "Ashe",  "Mid",  "Frost Archer",  "Moderate");
+
+        pasive = "Tiro Escarchado";
+        firstMove = "Concentración de la Guardabosques";
+        secondMove = "Descarga";
+        thirdMove = "Tiro de Alcón";
+        ultimate = "Flecha de Cristal";
+    }
+
+    public void pasive(){
+        System.out.println(pasive + ": Las flechas relentizan");
     }
 
     public void firstMove_Q(){
-        System.out.println(firstMove + ": Lanza una flecha");
+        System.out.println(firstMove + ": Aumenta la velocidad de ataque");
     }
 
     public void secondMove_W(){
-        System.out.println(secondMove + ": Lanza una un alcón ");
+        System.out.println(secondMove + ": Dispara un cono de flechas");
     }
 
-    public void frostShot(){
-        System.out.println("Lanzó una flecha");
+    public void thirdMove_E(){
+        System.out.println(thirdMove + ": Envia un alcón exploratorio");
     }
 
-    public void hawkShot(){
-        System.out.println("Lanzó un alcón");
+    public void ultimate_R(){
+        System.out.println(ultimate + ": Laza una flecha gigante que aturde");
     }
+
 }
 

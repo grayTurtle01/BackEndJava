@@ -26,11 +26,11 @@ public class Champion{
 }
 
 interface Moves{
+    void pasive();
     void firstMove_Q();
     void secondMove_W();
-    //~ void thirdMove_E();
-    //~ void ultimate_R();
-    //~ void pasive();
+    void thirdMove_E();
+    void ultimate_R();
 }
 
 
