@@ -9,7 +9,7 @@ public class Akali extends Champion implements Moves{
         secondMove = "Manto Crepuscular";
         thirdMove = "Maniobra de Shuriken";
         ultimate = "Ejecución Perfecta";
-        image = "akali.png";
+        image = "akali.jpg";
     }
 
     public void pasive(){
