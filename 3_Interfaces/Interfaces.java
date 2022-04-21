@@ -18,6 +18,7 @@ class Screen extends JFrame implements ActionListener{
 
     JLabel image;
     JButton next;
+    JLabel description;
     
 
     public Screen(){
@@ -35,9 +36,11 @@ class Screen extends JFrame implements ActionListener{
         next = new JButton("Next");
         next.addActionListener(this);
         panel.add(next);
+
+        description = new JLabel(ashe.description);
+        panel.add(description);
         
         add( panel);
-
         show();
     }
 
@@ -51,6 +54,8 @@ class Screen extends JFrame implements ActionListener{
         String fileName = champ.image;
         ImageIcon newIcon = new ImageIcon("images/"+fileName); 
         image.setIcon(newIcon);
+
+        description.setText( champ.description);
         
         setTitle(champ.name);
     }
