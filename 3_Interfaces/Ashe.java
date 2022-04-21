@@ -1,4 +1,3 @@
-
 public class Ashe extends Champion implements Moves{
     
     public Ashe(){
@@ -9,6 +8,7 @@ public class Ashe extends Champion implements Moves{
         secondMove = "Descarga";
         thirdMove = "Tiro de Alcón";
         ultimate = "Flecha de Cristal";
+        image = "ashe.png";
     }
 
     public void pasive(){

@@ -9,6 +9,7 @@ public class LeeSin extends Champion implements Moves{
         secondMove = "Salvaguarda";
         thirdMove = "Tempestad";
         ultimate = "Furia de Dragón";
+        image = "leeSin.jpg";
     }
 
     public void pasive(){

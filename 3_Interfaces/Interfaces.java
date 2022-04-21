@@ -1,28 +1,33 @@
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+class Screen extends JFrame{
+    Ashe ashe = new Ashe();
+    LeeSin lee = new LeeSin();
+    Akali akali = new Akali(); 
+
+
+    public Screen(){
+        super("Interfaces");
+        setSize(500, 700);
+        setVisible(true);
+
+        String path = ashe.image;
+        ImageIcon icon = new ImageIcon("images/"+path);    
+        add( new JLabel(icon));
+
+        show();
+    }
+
+    
+} 
+
 
 public class Interfaces{
 
     public static void main(String[] args){
 
-        Ashe ashe = new Ashe();
-        ashe.pasive();
-        ashe.firstMove_Q();
-        ashe.secondMove_W();
-        ashe.thirdMove_E();
-        ashe.ultimate_R();
-        System.out.println();
-
-        LeeSin lee = new LeeSin();
-        lee.pasive();
-        lee.firstMove_Q();
-        lee.secondMove_W();
-        lee.thirdMove_E();
-        lee.ultimate_R();
-        System.out.println();
-
-        Akali akali = new Akali();
-        System.out.println(akali);
-        akali.showMoves();
-
-        
+        Screen s = new Screen();
     }
 }

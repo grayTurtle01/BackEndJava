@@ -3,6 +3,7 @@ public class Champion{
     String role;
     String description;
     String difficulty;
+    String image;
 
     String firstMove;
     String secondMove;
