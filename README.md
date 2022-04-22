@@ -16,5 +16,5 @@
 ## 3. Interfaces
 <details>
   <summary> Show/Hide </summary>
-  <img src=3_Interfaces/screenShots/Interfaces.png>
+  <img src=3_Interfaces/screenShots/interfaces.png>
 </details>
