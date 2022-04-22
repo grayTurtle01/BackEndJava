@@ -17,7 +17,7 @@ class Screen extends JFrame implements ActionListener{
     int index = 0;
 
     JLabel image;
-    JButton next;
+    JButton next, prev;
     JLabel description;
     
 
@@ -28,14 +28,24 @@ class Screen extends JFrame implements ActionListener{
 
         JPanel panel = new JPanel();
 
+        JPanel upperPanel = new JPanel();
+
         String path = ashe.image;
         ImageIcon icon = new ImageIcon("images/"+path);
         image = new JLabel(icon);
-        panel.add(image);
+
+        prev = new JButton("Prev");
+        prev.addActionListener(this);
 
         next = new JButton("Next");
         next.addActionListener(this);
+
+        
+        panel.add(prev);
+        panel.add(image);
         panel.add(next);
+
+
 
         description = new JLabel(ashe.description);
         panel.add(description);
@@ -45,10 +55,19 @@ class Screen extends JFrame implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent e){
-        index++;
+        if( e.getSource() == next )
+            index++;
+
+        if( e.getSource() == prev )
+            index--;
+
 
         if( index >= champions.length )
             index = 0;
+
+        if( index < 0 )
+            index = champions.length - 1;
+
         
         Champion champ = champions[index];
         String fileName = champ.image;
