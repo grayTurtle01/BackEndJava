@@ -26,7 +26,18 @@ public class Champion{
      }
 
     public String firstMove_Q(){
+        return "";
+    }
 
+    public String secondMove_W(){
+        return "";
+    }
+
+    public String thirdMove_E(){
+        return "";
+    }
+
+    public String ultimate_R(){
         return "";
     }
 }
@@ -34,9 +45,9 @@ public class Champion{
 interface Moves{
     void pasive();
     String firstMove_Q();
-    void secondMove_W();
-    void thirdMove_E();
-    void ultimate_R();
+    String secondMove_W();
+    String thirdMove_E();
+    String ultimate_R();
 }
 
 

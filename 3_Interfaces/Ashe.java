@@ -16,19 +16,19 @@ public class Ashe extends Champion implements Moves{
     }
 
     public String firstMove_Q(){
-        return firstMove + ": \nAumenta la velocidad de ataque";
+        return firstMove + ": \n\n\tAumenta la velocidad de ataque";
     }
 
-    public void secondMove_W(){
-        System.out.println(secondMove + ": Dispara un cono de flechas");
+    public String secondMove_W(){
+        return secondMove + ": \n\n\tDispara un cono de flechas";
     }
 
-    public void thirdMove_E(){
-        System.out.println(thirdMove + ": Envia un alcón exploratorio");
+    public String thirdMove_E(){
+        return thirdMove + ": \n\n\tEnvia un alcón exploratorio";
     }
 
-    public void ultimate_R(){
-        System.out.println(ultimate + ": Laza una flecha gigante que aturde");
+    public String ultimate_R(){
+        return ultimate + ": \n\n\tLaza una flecha gigante que aturde";
     }
 
 }

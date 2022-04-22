@@ -13,23 +13,23 @@ public class Akali extends Champion implements Moves{
     }
 
     public void pasive(){
-        System.out.println(pasive + ": Aumenta el daño en el próximo ataque");
+        System.out.println(pasive + ": \n\n\tAumenta el daño en el próximo ataque");
     }
 
     public String firstMove_Q(){
-        return firstMove + ": Lanza 5 kunais que relantizan";
+        return firstMove + ": \n\n\tLanza 5 kunais que relantizan";
     }
 
-    public void secondMove_W(){
-        System.out.println(secondMove + ": Crea un anillo de humo donde gana invisibilidad");
+    public String secondMove_W(){
+        return secondMove + ": \n\n\tCrea un anillo de humo donde gana invisibilidad";
     }
 
-    public void thirdMove_E(){
-        System.out.println(thirdMove + ": Arroja un shoriken con el que puede marcar al enemigo");
+    public String thirdMove_E(){
+        return thirdMove + ": \n\n\tArroja un shoriken con el que puede marcar al enemigo";
     }
 
-    public void ultimate_R(){
-        System.out.println(ultimate + ": Enviste a un enemigo, se lanza otra vez");
+    public String ultimate_R(){
+        return ultimate + ": \n\n\tEnviste a un enemigo, se lanza otra vez";
     }
 
     public String toString(){

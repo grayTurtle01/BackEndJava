@@ -25,7 +25,7 @@ class Screen extends JFrame implements ActionListener{
     JButton next, prev;
     JLabel description;
 
-    JButton q, w, e, r;
+    JButton q, w, E, r;
     JTextArea move;
 
     public Screen(){
@@ -68,20 +68,24 @@ class Screen extends JFrame implements ActionListener{
         panel.add(centralPanel);
         
 
-        
-
         // bottom Panel
         JPanel bottomPanel = new JPanel();
 
         q = new JButton("Q");
         q.addActionListener(this);
+        
         w = new JButton("W");
-        e = new JButton("E");
+        w.addActionListener(this);
+        
+        E = new JButton("E");
+        E.addActionListener(this);
+        
         r = new JButton("R");
+        r.addActionListener(this);
 
         bottomPanel.add(q);
         bottomPanel.add(w);
-        bottomPanel.add(e);
+        bottomPanel.add(E);
         bottomPanel.add(r);
 
         move = new JTextArea("hello", 10, 40);
@@ -94,11 +98,15 @@ class Screen extends JFrame implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent e){
-        if( e.getSource() == next )
+        if( e.getSource() == next ){
             index++;
+            move.setText("");
+        }
 
-        if( e.getSource() == prev )
+        if( e.getSource() == prev ){
             index--;
+            move.setText("");
+        }
 
 
         if( index >= champions.length )
@@ -120,6 +128,17 @@ class Screen extends JFrame implements ActionListener{
         if( e.getSource() == q ){
             move.setText(champ.firstMove_Q());
         }
+        if( e.getSource() == w ){
+            move.setText(champ.secondMove_W());
+        }
+        if( e.getSource() == E ){
+            setTitle("e");
+            move.setText(champ.thirdMove_E());
+        }
+        if( e.getSource() == r ){
+            move.setText(champ.ultimate_R());
+        }
+
         
     }
 } 

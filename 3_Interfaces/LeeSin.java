@@ -13,23 +13,23 @@ public class LeeSin extends Champion implements Moves{
     }
 
     public void pasive(){
-        System.out.println(pasive + ": Después de utlizar una habilidad, sus 2 siguientes ataques reciben velocidad");
+        System.out.println(pasive + ": \n\n\tDespués de utlizar una habilidad, sus 2 siguientes ataques reciben velocidad");
     }
 
     public String firstMove_Q(){
-        return firstMove + ": Lanza una onda sónica";
+        return firstMove + ": \n\n\tLanza una onda sónica";
     }
 
-    public void secondMove_W(){
-        System.out.println(secondMove + ": Coloca un escudo en un aliado");
+    public String secondMove_W(){
+        return secondMove + ": \n\n\tColoca un escudo en un aliado";
     }
 
-    public void thirdMove_E(){
-        System.out.println(thirdMove + ": Revela enemigos en una area");
+    public String thirdMove_E(){
+        return thirdMove + ": \n\n\tRevela enemigos en una area";
     }
 
-    public void ultimate_R(){
-        System.out.println(ultimate + ": Patea un enemigo, proyectándolo en linea recta");
+    public String ultimate_R(){
+        return ultimate + ": \n\n\tPatea un enemigo, proyectándolo en linea recta";
     }
 
 }
