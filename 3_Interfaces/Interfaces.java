@@ -3,9 +3,14 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
+import java.awt.FlowLayout;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 
 class Screen extends JFrame implements ActionListener{ 
     Ashe ashe = new Ashe();
@@ -19,14 +24,16 @@ class Screen extends JFrame implements ActionListener{
     JLabel image;
     JButton next, prev;
     JLabel description;
-    
+
+    JButton q, w, e, r;
+    JTextArea move;
 
     public Screen(){
         super("Ashe");
-        setSize(500, 700);
+        setSize(500, 550);
         setVisible(true);
 
-        JPanel panel = new JPanel();
+        JPanel panel = new JPanel( new BorderLayout() );
 
         JPanel upperPanel = new JPanel();
 
@@ -41,16 +48,48 @@ class Screen extends JFrame implements ActionListener{
         next.addActionListener(this);
 
         
-        panel.add(prev);
-        panel.add(image);
-        panel.add(next);
-
-
-
-        description = new JLabel(ashe.description);
-        panel.add(description);
+        upperPanel.add(prev);
+        upperPanel.add(image);
+        upperPanel.add(next);
         
-        add( panel);
+
+        panel.add( upperPanel, BorderLayout.NORTH );
+
+        // Central Panel
+        JPanel centralPanel = new JPanel( new GridLayout(2,1));
+        description = new JLabel(ashe.description);
+        description.setHorizontalAlignment( JLabel.CENTER );
+
+        JLabel role = new JLabel("Role: ");
+        role.setHorizontalAlignment( JLabel.CENTER );
+
+        centralPanel.add(description);
+        //~ centralPanel.add(role);
+        panel.add(centralPanel);
+        
+
+        
+
+        // bottom Panel
+        JPanel bottomPanel = new JPanel();
+
+        q = new JButton("Q");
+        q.addActionListener(this);
+        w = new JButton("W");
+        e = new JButton("E");
+        r = new JButton("R");
+
+        bottomPanel.add(q);
+        bottomPanel.add(w);
+        bottomPanel.add(e);
+        bottomPanel.add(r);
+
+        move = new JTextArea("hello", 10, 40);
+        bottomPanel.add(move);
+
+        panel.add(bottomPanel, BorderLayout.SOUTH);
+        
+        add( panel );
         show();
     }
 
@@ -70,13 +109,18 @@ class Screen extends JFrame implements ActionListener{
 
         
         Champion champ = champions[index];
+        
         String fileName = champ.image;
         ImageIcon newIcon = new ImageIcon("images/"+fileName); 
         image.setIcon(newIcon);
 
-        description.setText( champ.description);
-        
+        description.setText( champ.description );
         setTitle(champ.name);
+
+        if( e.getSource() == q ){
+            move.setText(champ.firstMove_Q());
+        }
+        
     }
 } 
 

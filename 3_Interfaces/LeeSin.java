@@ -16,8 +16,8 @@ public class LeeSin extends Champion implements Moves{
         System.out.println(pasive + ": Después de utlizar una habilidad, sus 2 siguientes ataques reciben velocidad");
     }
 
-    public void firstMove_Q(){
-        System.out.println(firstMove + ": Lanza una onda sónica");
+    public String firstMove_Q(){
+        return firstMove + ": Lanza una onda sónica";
     }
 
     public void secondMove_W(){

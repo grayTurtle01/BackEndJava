@@ -15,8 +15,8 @@ public class Ashe extends Champion implements Moves{
         System.out.println(pasive + ": Las flechas relentizan");
     }
 
-    public void firstMove_Q(){
-        System.out.println(firstMove + ": Aumenta la velocidad de ataque");
+    public String firstMove_Q(){
+        return firstMove + ": \nAumenta la velocidad de ataque";
     }
 
     public void secondMove_W(){

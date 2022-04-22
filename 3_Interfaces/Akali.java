@@ -16,8 +16,8 @@ public class Akali extends Champion implements Moves{
         System.out.println(pasive + ": Aumenta el daño en el próximo ataque");
     }
 
-    public void firstMove_Q(){
-        System.out.println(firstMove + ": Lanza 5 kunais que relantizan");
+    public String firstMove_Q(){
+        return firstMove + ": Lanza 5 kunais que relantizan";
     }
 
     public void secondMove_W(){

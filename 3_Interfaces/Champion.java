@@ -24,11 +24,16 @@ public class Champion{
                "difficulty: " + difficulty + "\n" +
                "description: " + description; 
      }
+
+    public String firstMove_Q(){
+
+        return "";
+    }
 }
 
 interface Moves{
     void pasive();
-    void firstMove_Q();
+    String firstMove_Q();
     void secondMove_W();
     void thirdMove_E();
     void ultimate_R();
