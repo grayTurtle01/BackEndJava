@@ -15,9 +15,10 @@ import java.awt.GridLayout;
 class Screen extends JFrame implements ActionListener{ 
     Ashe ashe = new Ashe();
     LeeSin leeSin = new LeeSin();
-    Akali akali = new Akali(); 
+    Akali akali = new Akali();
+    KhaZix khaZix = new KhaZix();
 
-    Champion[] champions = { ashe, leeSin, akali};
+    Champion[] champions = { ashe, leeSin, akali, khaZix};
 
     int index = 0;
 
@@ -88,7 +89,7 @@ class Screen extends JFrame implements ActionListener{
         bottomPanel.add(E);
         bottomPanel.add(r);
 
-        move = new JTextArea("hello", 10, 40);
+        move = new JTextArea("hello", 8, 40);
         bottomPanel.add(move);
 
         panel.add(bottomPanel, BorderLayout.SOUTH);
@@ -132,7 +133,6 @@ class Screen extends JFrame implements ActionListener{
             move.setText(champ.secondMove_W());
         }
         if( e.getSource() == E ){
-            setTitle("e");
             move.setText(champ.thirdMove_E());
         }
         if( e.getSource() == r ){
