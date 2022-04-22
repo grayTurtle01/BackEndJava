@@ -1,5 +1,14 @@
 # BackEndJava
 
 ## 1. Modelado
-![uml](1_PracticaHarry/screenShots/uml.png)
-![Modelado](1_PracticaHarry/screenShots/Modelado.png)
+<details>
+  <summary> Show/Hide </summary>
+  <img src=1_PracticaHarry/screenShots/uml.png>
+  <img src=1_PracticaHarry/screenShots/Modelado.png>
+</details>
+
+## 2. Herencia y Polimorfismo
+<details>
+  <summary> Show/Hide </summary>
+  <img src=2_practicaMona/screenshots/running.png>
+</details>
