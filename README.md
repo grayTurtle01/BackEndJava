@@ -18,7 +18,7 @@
 <details>
   <summary> Show/Hide </summary>
   <img src=3_Interfaces/screenShots/interfaces.png>
-  <video src=3_Interfaces/screenShots/lol.ogv>
+  <video src=3_Interfaces/screenShots/lol.mp4>
 </details>
 
 
