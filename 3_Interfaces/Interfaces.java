@@ -17,8 +17,9 @@ class Screen extends JFrame implements ActionListener{
     LeeSin leeSin = new LeeSin();
     Akali akali = new Akali();
     KhaZix khaZix = new KhaZix();
+    Wukong wukong = new Wukong();
 
-    Champion[] champions = { ashe, leeSin, akali, khaZix};
+    Champion[] champions = { ashe, leeSin, akali, khaZix, wukong};
 
     int index = 0;
 
@@ -89,7 +90,7 @@ class Screen extends JFrame implements ActionListener{
         bottomPanel.add(E);
         bottomPanel.add(r);
 
-        move = new JTextArea("hello", 8, 40);
+        move = new JTextArea("", 8, 40);
         bottomPanel.add(move);
 
         panel.add(bottomPanel, BorderLayout.SOUTH);
