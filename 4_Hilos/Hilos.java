@@ -24,7 +24,20 @@ class Ventana extends JFrame{
 
 public class Hilos{
 
-    public static void main(String[] args){
+    static ImageIcon newIcon;
+    String[] fileNames = {"KhaZix.jpg", "akali.jpg"};
+
+    public static void main(String[] args) throws InterruptedException{
         Ventana v = new Ventana();
+
+        Thread.sleep(1000);
+        newIcon = new ImageIcon("images_large/KhaZix.jpg");
+        v.image.setIcon(newIcon);
+
+
+        Thread.sleep(1000);
+        newIcon = new ImageIcon("images_large/akali.jpg");
+        v.image.setIcon(newIcon);
+        
     }
 }
