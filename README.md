@@ -1,11 +1,11 @@
 # BackEndJava
 
 
-## 1. Modelado  🪄
+## 1. Modelado  🧙‍♂️
 <details>
   <summary> Show/Hide </summary>
   <img src=1_PracticaHarry/screenShots/uml.png>
-  <img src=1_PracticaHarry/screenShots/Modelado.png>
+  <img src=1_PracticaHarry/screenShots/Modelado2.png>
 </details>
 
 ## 2. Herencia y Polimorfismo :octocat:
