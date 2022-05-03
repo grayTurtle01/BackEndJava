@@ -19,3 +19,5 @@ class Personaje{
 
 
 ```
+
+![Modelado](screenShots/Modelado2.png)
