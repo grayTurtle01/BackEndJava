@@ -10,6 +10,7 @@ class Personaje{
   String patronus
   String boggart
   
+  Personaje(String name, String house, String gender)
   toString() String
   setPatronus(String patronus)
   getPatronus() String
