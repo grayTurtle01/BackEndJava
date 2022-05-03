@@ -1,5 +1,7 @@
 # 2. Herencia :octocat:
 
+
+
 ```mermaid
 classDiagram
 
@@ -43,3 +45,6 @@ OctoCat-->UmbrellaCat
 OctoCat-->FilmToCat
 
 ```
+
+![screnshot](screenshots/running.png)
+![DinoCat](screenshots/dinocat.png)
