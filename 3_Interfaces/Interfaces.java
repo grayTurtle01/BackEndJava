@@ -100,9 +100,12 @@ class Screen extends JFrame implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent e){
+        Sonido sonido = new Sonido("khazix.wav");
+        
         if( e.getSource() == next ){
             index++;
             move.setText("");
+            sonido.playSound();
         }
 
         if( e.getSource() == prev ){
