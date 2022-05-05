@@ -101,6 +101,7 @@ class Screen extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent e){
         Sonido sonido = new Sonido("khazix.wav");
+        Sonido s2 = new Sonido("este-mundo.wav");
         
         if( e.getSource() == next ){
             index++;
@@ -111,6 +112,7 @@ class Screen extends JFrame implements ActionListener{
         if( e.getSource() == prev ){
             index--;
             move.setText("");
+            s2.playSound();
         }
 
 
